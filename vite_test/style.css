@@ -1,0 +1,91 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 0px;
+}
+
+header {
+  border: 2px dashed blue;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  height: 5rem;
+
+}
+header p{
+  color: blue;
+  position: relative;
+}
+
+
+footer{
+  border: 2px dashed gray;
+  background-color: #282d32;
+  color: aliceblue;
+  font-family: sans-serif;
+  
+}
+
+footer ul{
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+footer ul a{
+  color: aliceblue;
+  text-decoration: none;
+  opacity:0.6;
+  padding-bottom: 3px ;
+  text-align: start;
+}
+footer ul a:hover {
+  opacity:0.8;
+  color: #f58020;
+}
+
+footer .row{
+  border: 2px dashed greenyellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:flex-start;
+  margin: 1rem 2rem;
+}
+footer .row img{
+  width: 70px;
+  left: 5rem;
+  top: 2rem;
+}
+footer #services{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0rem 2rem;
+}
+footer #about{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0rem 2rem;
+}
+
+footer #nformal{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 2px dashed grey;
+  width: 40rem;
+  padding: 0rem 2rem;
+}
+footer #nformal p{
+  border: 2px dashed grey;
+  width: 35rem;
+  opacity: 0.6;
+  text-align: start;
+}

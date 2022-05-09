@@ -1,0 +1,112 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+
+}
+body{
+  margin: 0;
+}
+
+.sample-header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-image: url("http://webmadewell.com/wp-content/uploads/2018/01/img-bg-sample-parallax-header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.collapsible-menu{
+  position: fixed;
+  left: 0;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+  background-color: white;
+  width: 100%;
+  opacity: 0.7;
+  text-align: left;
+  padding: 1rem;
+}
+
+.collapsible-menu label{
+  cursor: pointer;
+}
+
+input[type=checkbox]{
+  display: none;
+}
+
+label::before{
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f007";
+}
+
+
+input[type=checkbox]:checked + label::before{
+  font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f1ea";
+}
+
+.menu-content{
+  max-height: 0;
+  overflow: hidden;
+}
+/* Toggle Effect */
+input:checked ~ label {
+  font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f1ea";
+}
+input:checked ~ .menu-content {
+  max-height: 100%;
+}
+
+.menu-content ul{ 
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-content ul li{
+  padding: 4px;
+}
+.menu-content ul li a{
+  text-decoration: none;
+  color: inherit;
+}
+.menu-content ul li a:hover{
+  font-weight: bold;
+}
+.sample-header::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: midnightblue;
+  opacity: 0.3;
+}
+.sample-header-section{
+  position: relative;
+  padding: 15% 0 10%;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+.text-section-wrap{
+  position: relative;
+  background-color: white;
+  
+}
+.text-section{
+  position: relative;
+  max-width: 640px;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
